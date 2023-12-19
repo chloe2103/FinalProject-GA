@@ -147,7 +147,7 @@ public class WebAPI {
             if (OS.equalsIgnoreCase("OS X")) {
                 System.setProperty("webdriver.chrome.driver", "../Generic/BrowserDriver/mac/chromedriver");
             } else if (OS.equalsIgnoreCase("Windows")) {
-                System.setProperty("webdriver.chrome.driver", "Driver/ChromeDriver/chromedriver.exe");
+                System.setProperty("webdriver.chrome.driver", "Driver/Windows/Chrome/chromedriver-win64/chromedriver.exe");
             }
             driver = new ChromeDriver(options);
         } else if (browserName.equalsIgnoreCase("firefox")) {
@@ -328,7 +328,7 @@ public class WebAPI {
         File source = ts.getScreenshotAs(OutputType.FILE);
 
         //store the screen shot path in path variable. Here we are storing the screenshots under screenshots folder
-        String path = "C:\\Users\\Nana\\eclipse-workspace\\FinalProjectGA\\Screenshots\\" + screenshotName + df + ".png";
+        String path = "Screenshots\\" + screenshotName + df + ".png";
 
         //create another File object variable which points(refer) to the above stored path variable
         File destination = new File(path);

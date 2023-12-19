@@ -12,7 +12,7 @@
     <parameter name="os_version" value="10"/>
     <!--        <parameter name="os_version" value="Sierra"/>-->
     <parameter name="browserName" value="chrome"/>
-    <parameter name="browserVersion" value="119"/>
+    <parameter name="browserVersion" value="120"/>
     <parameter name="url" value="https://www.amazon.com/"/>
 
     <test name="HomePage">
