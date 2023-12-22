@@ -16,6 +16,7 @@
     <parameter name="url" value="https://www.nike.com/"/>
 
     <test name="HomePage">
+        <parameter name="zipcode" value="19971"></parameter>
         <classes>
             <class name="Nike.TestCases"></class>
 
