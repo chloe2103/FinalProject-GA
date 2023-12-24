@@ -98,8 +98,9 @@ public class Homepage extends WebAPI {
         }
     }
 
-    public void storeSelect() {
+    public void storeSelect(String zipcode) {
         findAStore.click();
+        zipcodeInput.sendKeys(zipcode + Keys.ENTER);
         WebElement firstResult = storeResult.findElement(By.tagName("section"));
         Actions actions = new Actions(driver);
         actions.moveToElement(firstResult).doubleClick().perform();
@@ -126,7 +127,7 @@ public class Homepage extends WebAPI {
 
     //find stores near me
     public void TestCase4(String zipcode) throws InterruptedException {
-        storeSelect();
+        storeSelect(zipcode);
     }
 
 

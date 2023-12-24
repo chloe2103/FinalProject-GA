@@ -2,11 +2,10 @@ package Nike;
 
 import Common.WebAPI;
 import org.openqa.selenium.support.PageFactory;
-import org.testng.annotations.DataProvider;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-public class TestCases extends WebAPI {
+public class NikeTestCases extends WebAPI {
     //extendingWb API functions
     static Nike.Homepage homepage;
     //object of a class

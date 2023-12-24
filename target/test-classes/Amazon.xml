@@ -17,7 +17,7 @@
 
     <test name="HomePage">
         <classes>
-            <class name="AmazonHTML.TestCases"></class>
+            <class name="AmazonHTML.AmazonTestCases"></class>
 
         </classes>
 
